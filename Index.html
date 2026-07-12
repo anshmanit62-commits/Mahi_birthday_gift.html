@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Mahi Tripathi </title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <style>
+        :root { --primary: #ff7eb9; --gold: #ffd700; --white: #ffffff; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background: linear-gradient(135deg, #2d1b4e, #4b0082, #ff7eb9); color: var(--white); text-align: center; overflow-x: hidden; }
+        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+        h1 { font-family: 'Dancing Script', cursive; font-size: 4rem; text-shadow: 0 0 20px var(--gold); }
+        .surprise-content { display: none; padding: 40px 20px; animation: fadeIn 2s; }
+        .card { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); padding: 30px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.2); max-width: 800px; margin: auto; margin-bottom: 30px; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
+        .gallery img { width: 100%; height: 250px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .btn { background: var(--gold); border: none; padding: 15px 30px; border-radius: 50px; font-weight: bold; cursor: pointer; transition: 0.3s; font-size: 1.2rem; }
+        .btn:hover { transform: scale(1.1); box-shadow: 0 0 20px var(--gold); }
+        video { width: 100%; max-width: 600px; border-radius: 15px; margin-top: 20px; border: 3px solid var(--gold); }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+    <div class="hero" id="hero">
+        <h1>Happy Birthday Mahi Tripathi ❤️ 5 August</h1>
+        <button class="btn" onclick="showSurprise()">Click for a Surprise </button>
+    </div>
+
+    <div id="surpriseContent" class="surprise-content">
+        <!-- Gallery 1 -->
+        <section>
+            <div class="card">
+                <h2>Meri Sabse Pyaari Dost(Mahi ❤️)</h2>
+                <div class="gallery">
+                    <img src="mahi1.jpg" alt="Mahi"><img src="mahi2.jpg" alt="Mahi">
+                    <img src="mahi4.jpg" alt="Mahi"><img src="mahi5.jpg" alt="Mahi"><img src="mahi6.jpg" alt="Mahi">
+                    <img src="mahi7.jpg" alt="Mahi"><img src="mahi8.jpg" alt="Mahi"><img src="mahi9.jpg" alt="Mahi">
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Video Section -->
+        <section>
+            <div class="card">
+                <h2>For My Special Person❣️</h2>
+                <video controls>
+                    <source src="mahi143.mp4" type="video/mp4">
+                    
+                </video>
+            </div>
+        </section>
+    </div>
+<h2 class="gallery-title">तुम्हारे साथ गुजारे हुए कुछ खूबसूरत पल</h2>
+<div class="image-container">
+    <img src="Mahiansh2.jpg" alt="Pal" style="width: 100%; max-width: 300px; display: block; margin: 10px auto;">
+    <img src="Mahiansh1.jpg" alt="Pal" style="width: 100%; max-width: 300px; display: block; margin: 10px auto;">
+</div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById('surpriseContent').style.display = 'block';
+            document.querySelector('.btn').style.display = 'none';
+            confetti({ particleCount: 200, spread: 70, origin: { y: 0.6 } });
+            alert("Mahi, तुम मेरी वो पसंद हो जिसे पसंद करने के बाद मुझे कुछ और पसंद नहीं आता इस लिए मेरी तरफ से ये प्यारा स Gift तुम्हारे लिए. Happy Birthday Mahi Tripathi ! ❣️")   }
+    </script>
+</body>
+</html>
+
